@@ -5,7 +5,7 @@ const {getAddNotes,saveNotes,updateNotes,deleteNotes} = require('../controllers/
 router.get('/notes',getAddNotes);
 router.get('/notes/save',saveNotes);
 router.get('/notes/update',updateNotes);
-router.get('/notes/delete',deleteNotes);
+router.get('/notes/delete/:noteId',deleteNotes);
 
 
 
